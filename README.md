@@ -17,6 +17,7 @@ Ive used it to generate big random word lists for Lorem Ipsum type stuff, coming
 
 Using diceware from a CPU isn't recommended for high-security usecases, but IMO its fine to do for like, making new accounts on sites where it doesnt matter so much.
 
+shouout to @yuvallanger OG author of the diceware rust crate. 
 
 ### why?
 
