@@ -6,6 +6,8 @@ configs, tools, bash stuff, random.
 
 [shrug alias](#shrug-alias)
 
+[ppypath: pretty bash PYTHONPATH ](#ppypath:-pretty-bash-PYTHONPATH)
+
 [... more](#more-whenver-i-get-around-to-it-lol)
 
 
@@ -103,6 +105,14 @@ put this in `.bashrc` or wherever, then `$ source .bashrc`
 
 ``` bash
 alias shrug="echo '¯\_(ツ)_/¯' "
+```
+
+
+## ppypath: pretty bash PYTHONPATH 
+
+
+```
+alias ppypath="python3 -c 'import sys; from pprint import pprint as pp; pp(sys.path)'"
 ```
 
 
