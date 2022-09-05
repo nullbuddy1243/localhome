@@ -6,7 +6,7 @@ configs, tools, bash stuff, random.
 
 [shrug alias](#shrug-alias)
 
-[ppypath: pretty bash PYTHONPATH ](#ppypath:-pretty-bash-PYTHONPATH)
+[ppypath: pretty bash PYTHONPATH](#ppypath)
 
 [... more](#more-whenver-i-get-around-to-it-lol)
 
@@ -108,7 +108,9 @@ alias shrug="echo '¯\_(ツ)_/¯' "
 ```
 
 
-## ppypath: pretty bash PYTHONPATH 
+## ppypath
+
+pretty bash PYTHONPATH 
 
 
 ```
