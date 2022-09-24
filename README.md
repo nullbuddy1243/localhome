@@ -9,6 +9,55 @@ configs, tools, bash stuff, random.
 [... more](#more-whenver-i-get-around-to-it-lol)
 
 
+
+## kitty terminal 
+
+https://sw.kovidgoyal.net/kitty/
+
+trustme it rules
+
+## rebashrc 
+
+helpful lil alias 
+
+`alias rebashrc="source /Users/{yr name}/.bashrc"` 
+
+## high use random cli progs
+
+ffmpeg: 
+  osx brew: https://formulae.brew.sh/formula/ffmpeg
+
+imgmagick
+  osx brew: https://formulae.brew.sh/formula/imagemagick
+
+youtube-dl 
+  https://youtube-dl.org/
+  i use this constantly 
+
+
+## exa ls replacement
+
+https://the.exa.website/
+
+`brew install exa` and then add this to `.bashrc` 
+```
+alias ll="exa -lah"
+```
+i alias ll because long live list long 
+
+
+## nest upgrade 
+
+niche unless yr  yr nest dev... 
+
+```
+alias nestupgrade='npx npm-check-updates "/nestjs*/" -u'
+```
+
+## put fortune in yr .bashrc for fun every time you open terminal
+
+uh yeah just do that `fortune`
+
 ## diceware string fixer thing 
 
 having a CLI diceware on hand is stupidly useful for a variety of things. tbh, I end up using it multiple times a week. 
