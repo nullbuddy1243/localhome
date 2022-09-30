@@ -1,7 +1,16 @@
+import sys
+import argparse 
 
 # todo: make it so chars print depending on where in the wave.  ie peak = ^, trough = v, etc
-# prints a sin wave of amp and length to term
-def sinPrint(amp, length):
+# todo: could use these unicode Geometric Shapes 
+# todo ◟◜◝◞
+# https://unicode-explorer.com/c/25DE
+# wild  
+# python sinprint.py --amp 10 --length 20 --verbose --char '◟◜◝◞'
+# python sinprint.py --amp 10 --length 20 --verbose --char '◾'
+
+# * sinPrint: prints a sin wave 
+def sinPrint(amp, length, char):
     innerSpace = 1 
     outerSpace = 2
 
@@ -12,12 +21,12 @@ def sinPrint(amp, length):
             for k in range(1, outerSpace + 1):
                 print(end = " ")
 
-            print("-", end = "")
+            print(char, end = "")
 
             for k in range(1, innerSpace + 1):
                 print(end = " ")
 
-            print("-", end = "")
+            print(char, end = "")
 
             for k in range( 1, outerSpace + 1):
                 print(end = " ")
@@ -36,9 +45,17 @@ def sinPrint(amp, length):
 
         print()
 
-# drive
-amp, length = 5, 20
+parser = argparse.ArgumentParser()
+parser.add_argument("--amp", help="sin wave amplitude", type=int, default=4) 
+parser.add_argument("--length", help="length of wave to print", type=int, default=10)
+parser.add_argument("--verbose", help="print verbosely", action="store_true")
+parser.add_argument("--char", help="char to use", default="*")
 
-sinPrint(amp,length)
+args = parser.parse_args()
+if args.verbose:
+    print("parsed args: ")
+    for arg in args._get_kwargs():
+        print(f"{arg[0]}={arg[1]}")
 
+sinPrint(args.amp, args.length, args.char)
 
