@@ -11,6 +11,11 @@ alias lll="exa --tree --level=2 --long"
 
 alias shrug="echo '¯\_(ツ)_/¯' " 
 
+
+# bash PS1 prompt customization + newline after each command (first num is prev command exit code)
+PS1='\n\[\e[0m\][\[\e[0;38;5;166m\]$?\[\e[0m\]] \[\e[0;3;38;5;39m\]\w \[\e[0;7;38;5;39m\]\$\[\e[0m\]'
+
+
 # icat prints img in terminal
 alias icat="kitty +kitten icat"
 
