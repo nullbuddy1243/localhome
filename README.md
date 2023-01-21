@@ -11,6 +11,14 @@ configs, tools, bash stuff, random.
 [... more](#more-whenver-i-get-around-to-it-lol)
 
 
+## webp to png 
+
+do you hate it when you download a pic and its in WEBP format and then you cant open it locally from finder / explorer? 
+
+this bash script can be cron scheduled to run in a given folder and automatically converts all WEBPs into PNGs in place and puts them into a pngs_out/ folder too. 
+
+;)
+
 
 ## kitty terminal 
 
