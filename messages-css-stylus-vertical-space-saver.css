@@ -1,0 +1,15 @@
+/* these styles save verticial space by reducing the margin and padding on a few classes (3) for messages.google.com/web/ url. is helpful when keeping a single text convo open in a very small window 
+ * install stylus extension from chrome webstore to use.
+ * */
+
+.first-msg-in-bundle[_ngcontent-ng-c1077365769] {
+    margin-top: 0px;
+}
+
+.msg-part[_ngcontent-ng-c1077365769] {
+    margin: 0px 0 0 0px;
+}
+
+.text-msg-content[_ngcontent-ng-c2415828508] {
+    padding: 2px 0;
+}
